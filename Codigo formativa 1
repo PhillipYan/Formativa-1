@@ -1,0 +1,37 @@
+contador = 1
+while contador == 1:
+  print("Digite qual operação deseja fazer:")
+  print(" 1 = f ° g")
+  print(" 2 = g ° f")
+  print(" 3 = f ° f")
+  print(" 4 = g ° g")
+  opcao = int(input("Digite a sua escolha:"))
+  #altere a função aqui
+  x = 4
+  f = x**2
+  g = x - 1
+  
+  if opcao == 1:
+    f = (x - 1)**2
+    print("Sua opção escolhida foi f ° g")
+    print("O resultado da função é: {}".format(f))
+    contador = 0
+  if opcao == 2:
+    g = (x**2) - 1
+    print("Sua opção escolhuda foi g ° f")
+    print("O resultado da função é {}".format(g))
+    contador = 0
+  if opcao == 3:
+    f = (x**2)**2
+    print("Sua opção escolhida foi f ° f")
+    print("O resultado da função é: {}".format(f))
+    contador = 0
+  if opcao == 4:
+    g = (x-1)-1
+    print("Sua opção escolhuda foi g ° g")
+    print("O resultado da função é {}".format(g))
+    contador = 0
+  if 1 > opcao >4:
+    print("Opção inválida, por favor escolha uma opção válida.")
+
+  
